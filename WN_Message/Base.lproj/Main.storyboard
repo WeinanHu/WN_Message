@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NvK-5a-t3s">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0T-nR-2tq">
+                                <rect key="frame" x="115" y="114" width="90" height="30"/>
+                                <state key="normal" title="进入消息推送"/>
+                                <connections>
+                                    <action selector="clickMsgButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fig-gv-9o5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您有0条新消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-xT-3VB">
+                                <rect key="frame" x="104" y="85" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您有0条新聊天消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sg-BB-mfg">
+                                <rect key="frame" x="87" y="166" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTC-YD-Ni4">
+                                <rect key="frame" x="115" y="189" width="90" height="30"/>
+                                <state key="normal" title="进入客服聊天"/>
+                                <connections>
+                                    <action selector="clickChatButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TIc-oL-4Zh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v0T-nR-2tq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="7Rt-4k-LQF"/>
+                            <constraint firstItem="rTC-YD-Ni4" firstAttribute="top" secondItem="v0T-nR-2tq" secondAttribute="bottom" constant="45" id="A8m-AN-mgx"/>
+                            <constraint firstItem="3sg-BB-mfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aho-vM-e4g"/>
+                            <constraint firstItem="v0T-nR-2tq" firstAttribute="top" secondItem="xcc-xT-3VB" secondAttribute="bottom" constant="8" id="BaB-A5-Z07"/>
+                            <constraint firstItem="xcc-xT-3VB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JhE-Qy-i1H"/>
+                            <constraint firstItem="v0T-nR-2tq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nzi-yK-uKR"/>
+                            <constraint firstItem="rTC-YD-Ni4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cZW-fN-hv0"/>
+                            <constraint firstItem="rTC-YD-Ni4" firstAttribute="top" secondItem="3sg-BB-mfg" secondAttribute="bottom" constant="2" id="udm-sF-bbx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wjg-6X-cgZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="chatButton" destination="rTC-YD-Ni4" id="MRk-Tr-ZYY"/>
+                        <outlet property="chatLabel" destination="3sg-BB-mfg" id="ZPS-WP-XKU"/>
+                        <outlet property="msgButton" destination="v0T-nR-2tq" id="8vY-vi-qbv"/>
+                        <outlet property="msgLabel" destination="xcc-xT-3VB" id="iQS-bP-XX0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="306"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z7T-kt-xxc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NvK-5a-t3s" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Vf-7E-gt0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RYo-Gf-PRi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFM-wG-6W3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="306"/>
+        </scene>
+    </scenes>
+</document>

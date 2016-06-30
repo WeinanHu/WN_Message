@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MsgViewController">
+            <connections>
+                <outlet property="tableView" destination="zbz-Eb-M0O" id="91a-Yh-RUh"/>
+                <outlet property="topConstant" destination="mMz-Sq-sY4" id="fts-3N-vlq"/>
+                <outlet property="view" destination="RZy-DN-D16" id="Ltu-Dd-Htq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RZy-DN-D16">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zbz-Eb-M0O">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="sectionIndexBackgroundColor" red="0.97443178210000003" green="0.85295055149999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.81176470590000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="zbz-Eb-M0O" firstAttribute="leading" secondItem="RZy-DN-D16" secondAttribute="leading" id="12e-mZ-A0k"/>
+                <constraint firstAttribute="trailing" secondItem="zbz-Eb-M0O" secondAttribute="trailing" id="JOf-YT-giz"/>
+                <constraint firstItem="zbz-Eb-M0O" firstAttribute="top" secondItem="RZy-DN-D16" secondAttribute="top" constant="64" id="mMz-Sq-sY4"/>
+                <constraint firstAttribute="bottom" secondItem="zbz-Eb-M0O" secondAttribute="bottom" id="xPp-Eh-Iyy"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

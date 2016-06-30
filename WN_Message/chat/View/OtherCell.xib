@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="otherCell" rowHeight="87" id="8d9-d8-O92" customClass="OtherCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8d9-d8-O92" id="8D5-IH-drT">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uSc-6i-i1G">
+                        <rect key="frame" x="26" y="17" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="HNQ-TH-IJj"/>
+                            <constraint firstAttribute="width" constant="50" id="YZ8-aq-lH9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STextNodeBkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Eb8-rR-wYK">
+                        <rect key="frame" x="81" y="20" width="65" height="54"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ix6-qC-uvM">
+                        <rect key="frame" x="36" y="67" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-5-12 12:22:11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAL-T9-tck">
+                        <rect key="frame" x="133" y="0.0" width="109" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Iar-oL-tvs">
+                        <rect key="frame" x="93" y="25" width="43" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AAL-T9-tck" firstAttribute="centerX" secondItem="8D5-IH-drT" secondAttribute="centerX" id="2Zf-ky-lOZ"/>
+                    <constraint firstItem="AAL-T9-tck" firstAttribute="top" secondItem="8D5-IH-drT" secondAttribute="top" id="37h-5n-sf8"/>
+                    <constraint firstItem="uSc-6i-i1G" firstAttribute="top" secondItem="8D5-IH-drT" secondAttribute="top" constant="17" id="Al0-TI-6q9"/>
+                    <constraint firstItem="Iar-oL-tvs" firstAttribute="leading" secondItem="uSc-6i-i1G" secondAttribute="trailing" constant="17" id="LjD-8t-Wai"/>
+                    <constraint firstItem="Iar-oL-tvs" firstAttribute="trailing" secondItem="Eb8-rR-wYK" secondAttribute="trailing" constant="-10" id="P95-81-AEf"/>
+                    <constraint firstItem="Iar-oL-tvs" firstAttribute="top" secondItem="uSc-6i-i1G" secondAttribute="top" id="S1K-UD-lYA"/>
+                    <constraint firstItem="Iar-oL-tvs" firstAttribute="leading" secondItem="Eb8-rR-wYK" secondAttribute="leading" constant="12" id="WJJ-kk-g9o"/>
+                    <constraint firstItem="Ix6-qC-uvM" firstAttribute="top" secondItem="uSc-6i-i1G" secondAttribute="bottom" id="ZJ6-qH-zSy"/>
+                    <constraint firstItem="uSc-6i-i1G" firstAttribute="leading" secondItem="8D5-IH-drT" secondAttribute="leading" constant="26" id="ZZ9-jx-KkM"/>
+                    <constraint firstAttribute="bottom" secondItem="Iar-oL-tvs" secondAttribute="bottom" constant="27" id="ccp-0f-ZGE"/>
+                    <constraint firstItem="Ix6-qC-uvM" firstAttribute="centerX" secondItem="uSc-6i-i1G" secondAttribute="centerX" id="pkP-pC-xDP"/>
+                    <constraint firstItem="Iar-oL-tvs" firstAttribute="top" secondItem="Eb8-rR-wYK" secondAttribute="top" constant="5" id="qUq-iF-RUj"/>
+                    <constraint firstItem="Iar-oL-tvs" firstAttribute="bottom" secondItem="Eb8-rR-wYK" secondAttribute="bottom" constant="-15" id="tXG-wF-hBl"/>
+                    <constraint firstItem="Iar-oL-tvs" firstAttribute="top" secondItem="8D5-IH-drT" secondAttribute="topMargin" constant="17" id="xce-LU-vbB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="S1K-UD-lYA"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97443178210000003" green="0.85295055149999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="dateLabel" destination="AAL-T9-tck" id="mkG-F1-loU"/>
+                <outlet property="headImageView" destination="uSc-6i-i1G" id="lAC-cN-FpO"/>
+                <outlet property="msgLabel" destination="Iar-oL-tvs" id="bqi-wR-LSW"/>
+                <outlet property="nameLabel" destination="Ix6-qC-uvM" id="FWe-AL-Xbx"/>
+                <outlet property="otherPoam" destination="Eb8-rR-wYK" id="Ssb-yC-Dgn"/>
+            </connections>
+            <point key="canvasLocation" x="-268.5" y="-111.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="STextNodeBkg.png" width="65" height="54"/>
+    </resources>
+</document>
